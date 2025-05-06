@@ -1,4 +1,23 @@
 ---
-title: 'Delete Plant'
-openapi: 'DELETE /plants/{id}'
+title: 'Delete Image'
+description: 'Remove generated images from your account'
+openapi: 'DELETE /images/{id}'
 ---
+
+## Deleting Images
+
+Use this endpoint to permanently delete images from your account.
+
+### Path Parameters
+
+- `id` (required) - The unique identifier of the image to delete
+
+### Response
+
+Returns a confirmation of the deletion operation.
+
+### Notes
+
+- Deleted images cannot be recovered
+- You can only delete images that belong to your account
+- Deletion frees up storage quota for your account

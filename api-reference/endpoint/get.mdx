@@ -1,4 +1,21 @@
 ---
-title: 'Get Plants'
-openapi: 'GET /plants'
+title: 'Get Images'
+description: 'Retrieve generated images from your account'
+openapi: 'GET /images'
 ---
+
+## Retrieving Images
+
+Use this endpoint to retrieve images you've generated through the BetterWaifu API. You can filter by various parameters to find specific images.
+
+### Query Parameters
+
+- `limit` - Number of images to return (default: 10, max: 100)
+- `offset` - Pagination offset (default: 0)
+- `status` - Filter by generation status (e.g., "completed", "processing")
+- `prompt` - Search by prompt text
+- `model` - Filter by model used
+
+### Response
+
+Returns a list of image objects with metadata including generation parameters, URLs, and timestamps.

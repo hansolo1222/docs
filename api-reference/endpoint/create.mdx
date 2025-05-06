@@ -1,4 +1,25 @@
 ---
-title: 'Create Plant'
-openapi: 'POST /plants'
+title: 'Create Image'
+description: 'Generate new images using text prompts'
+openapi: 'POST /images'
 ---
+
+## Generate Images
+
+Use this endpoint to create new images from text prompts. You can specify various parameters to control the generation process.
+
+### Request Body
+
+- `prompt` (required) - The text description of the image you want to generate
+- `model` - The AI model to use (default: depends on your subscription)
+- `negative_prompt` - Elements to avoid in the generated image
+- `width` - Image width in pixels (model-dependent)
+- `height` - Image height in pixels (model-dependent)
+- `seed` - Random seed for reproducible results
+- `steps` - Number of diffusion steps
+- `cfg_scale` - How closely to follow the prompt
+- `sampler` - Sampling method to use
+
+### Response
+
+Returns information about the created generation job, including a job ID for status tracking.

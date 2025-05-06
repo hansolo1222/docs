@@ -1,4 +1,32 @@
 ---
-title: 'New Plant'
-openapi: 'WEBHOOK /plant/webhook'
+title: 'Webhooks'
+description: 'Configure webhooks for real-time generation updates'
+openapi: 'POST /webhooks'
 ---
+
+## Setting Up Webhooks
+
+Use webhooks to receive real-time notifications when your image generations complete or encounter errors.
+
+### Creating a Webhook
+
+- Specify a callback URL where BetterWaifu will send HTTP POST requests
+- Configure event types you want to receive (e.g., "generation.completed", "generation.failed")
+- Optionally add authentication headers
+
+### Webhook Payload
+
+Webhook notifications include detailed information about the generation:
+
+- Event type
+- Generation ID
+- Status
+- Result URLs (for successful generations)
+- Error information (for failed generations)
+- Original request parameters
+
+### Security Considerations
+
+- Use HTTPS for your webhook endpoints
+- Validate webhook signatures to ensure requests come from BetterWaifu
+- Implement retry logic in your webhook handler

@@ -17,34 +17,36 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "subscribing"
             ]
           },
           {
-            "group": "Settings",
+            "group": "Prompting",
             "pages": [
+               "prompting/basics",
               {
-                "group": "Models ",
+                "group": "Models",
                 "pages": [
-                  "settings/models/intro",
-                  "settings/models/Hassaku"
+                  "prompting/models/intro-to-models",
+                  "prompting/models/duchaiten",
+                  "prompting/models/hassaku-illustrious"
 
                 ]
               },
-              
-              "settings/extensions",
-              "settings/prompt",
-              "settings/negative-prompt",
-              "settings/image-size",
-              "settings/auto-settings",
-              "settings/preprompts",
-              "settings/sampler",
-              "settings/steps",
-              "settings/cfg-scale",
-              "settings/seed"
-
-
+               {
+                "group": "Settings",
+                "pages": [
+                  "prompting/settings/cheatsheet",
+                  "prompting/settings/negative-prompt",
+                 "prompting/settings/image-size",
+                 "prompting/settings/auto-settings",
+                 "prompting/settings/preprompts",
+                 "prompting/settings/sampler",
+                 "prompting/settings/steps",
+                 "prompting/settings/cfg-scale",
+                 "prompting/settings/seed"
+                ]
+              }
             ]
           }
         ]
@@ -73,12 +75,7 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://docs.betterwaifu.com",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
+          "anchor": "Discord Community",
           "href": "https://discord.gg/kW2UWa4zNq",
           "icon": "discord"
         },
