@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "BetterWaifu Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#A855F7",
+    "light": "#A855F7",
+    "dark": "#A855F7"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -22,14 +22,29 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Settings",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              {
+                "group": "Models ",
+                "pages": [
+                  "settings/models/intro",
+                  "settings/models/Hassaku"
+
+                ]
+              },
+              
+              "settings/extensions",
+              "settings/prompt",
+              "settings/negative-prompt",
+              "settings/image-size",
+              "settings/auto-settings",
+              "settings/preprompts",
+              "settings/sampler",
+              "settings/steps",
+              "settings/cfg-scale",
+              "settings/seed"
+
+
             ]
           }
         ]
@@ -59,17 +74,17 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://docs.betterwaifu.com",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "https://discord.gg/kW2UWa4zNq",
+          "icon": "discord"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://betterwaifu.com/blog",
           "icon": "newspaper"
         }
       ]
@@ -83,20 +98,20 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@betterwaifu.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go to BetterWaifu",
+      "href": "https://betterwaifu.com/create"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/betterwaifuai",
+      "discord": "https://discord.gg/kW2UWa4zNq"
+ 
     }
   }
 }
