@@ -3,3 +3,99 @@ title: 'Cheatsheet'
 description: 'Quick overview of all of the settings in BetterWaifu'
  
 ---
+
+# BetterWaifu Settings Cheatsheet
+
+This quick reference guide covers all the major settings in BetterWaifu and their recommended values for optimal results.
+
+## Model Selection
+
+| Model | Best For | Notes |
+|-------|----------|-------|
+| Duchaiten | Anime-style art with diverse aesthetics | Uses trigger keywords for 55+ styles |
+| Hassaku Illustrious | Detailed artistic renderings | Strong with complex compositions |
+
+## Basic Settings
+
+| Setting | Range | Recommended | Description |
+|---------|-------|-------------|-------------|
+| Prompt | Text | Be specific | Main text describing what you want to generate |
+| Negative Prompt | Text | Quality issues | Describe what you don't want in the image |
+| Image Width | 576-1728 | 1024 | Image width in pixels (must be multiple of 8) |
+| Image Height | 576-1408 | 1024 | Image height in pixels (must be multiple of 8) |
+| Model | - | - | AI model to use for generation |
+
+## Advanced Settings
+
+| Setting | Range | Recommended | Description |
+|---------|-------|-------------|-------------|
+| CFG Scale | 1-30 | 7-11 | How closely to follow the prompt |
+| Sampler | Various | Euler a / DPM++ SDE | Method used to sample the noise |
+| Steps | 10-100 | 30-36 | Number of denoising steps |
+| Seed | -1 to 2^32-1 | -1 (random) | Starting point for generation |
+| Use Auto Settings | On/Off | On for beginners | Automatically optimize parameters |
+| Use Recommended Preprompts | On/Off | On | Add model-specific optimization text |
+
+## Image Size Quick Reference
+
+### Standard (S) Aspect Ratios
+
+| Width | Height | Ratio (W:H) | Fraction |
+|-------|--------|-------------|----------|
+| 1024  | 1024   | 1           | 1:1      |
+| 704   | 1408   | 0.5         | 1:2      |
+| 768   | 1344   | 0.57        | 4:7      |
+| 768   | 1280   | 0.6         | 3:5      |
+| 896   | 1152   | 0.78        | 7:9      |
+| 896   | 1088   | 0.82        | 14:17    |
+| 960   | 1024   | 0.94        | 15:16    |
+| 1088  | 896    | 1.21        | 17:14    |
+| 1152  | 896    | 1.29        | 9:7      |
+| 1280  | 768    | 1.67        | 5:3      |
+| 1344  | 768    | 1.75        | 7:4      |
+| 1408  | 704    | 2           | 2:1      |
+| 1600  | 640    | 2.5         | 5:2      |
+| 1728  | 576    | 3           | 3:1      |
+
+## Sampler Reference
+
+| Sampler | Speed | Quality | Best For |
+|---------|-------|---------|----------|
+| DPM++ 2M Karras | Medium | High | General use |
+| Euler a | Fast | Good | Quick generations |
+| DDIM | Medium | Consistent | Reproducible results |
+| DPM++ SDE | Slow | Excellent | Detailed images |
+
+## CFG Scale Effects
+
+| Value | Effect | Use Case |
+|-------|--------|----------|
+| 4-7 | More creative, less adherence to prompt | Artistic, abstract images |
+| 7-12 | Balanced | General use, most images |
+| 12-20 | Strict prompt following | Complex, specific images |
+
+## Steps Guidelines
+
+| Value | Result | Use Case |
+|-------|--------|----------|
+| 20-30 | Faster, rougher | Concept testing |
+| 30-50 | Good balance | General use |
+| 50-70 | High detail | Complex scenes |
+| 70+ | Diminishing returns | Very specific needs |
+
+## Credits Usage
+
+| Operation | Credits Used | Notes |
+|-----------|--------------|-------|
+| Generate 1 image | 1 credit | Failed generations don't use credits |
+| Generation batch | 1 credit per image | Batch size depends on subscription |
+
+## Quick Tips
+
+- Use line breaks in your prompt to organize concepts
+- Start with Auto Settings before manual adjustments
+- Save seeds of images you like for similar results
+- Combine style keywords in Duchaiten for unique aesthetics
+- Use negative prompts to avoid common problems like bad hands
+- Try adjusting Width/Height before changing other parameters
+- Remember all dimensions must be multiples of 8

@@ -1,41 +1,120 @@
 ---
 title: 'Basics of Prompting'
-description: 'Basics of prompting'
+description: 'Learn the fundamentals of creating effective prompts for AI image generation'
 
 ---
 
-## Basic
+# Basics of Prompting
 
-Prompts will be written as follows:
+## Understanding AI Image Generation
 
-`Hi this is a prompt you can use!`
+AI generators work by interpreting text prompts and converting them into images. While the process is simple (type and click "Generate"), creating effective prompts that produce the exact images you want requires some understanding of how the AI works.
 
-### Inline Code
+## The Danbooru Connection
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+All anime AI image generators, including BetterWaifu, are trained on images from Danbooru - the largest anime imageboard in the world. On Danbooru, images are comprehensively tagged with descriptors ranging from physical characteristics to actions and objects.
+
+**Key insight:** You can use these tags directly in your prompts, and there's no difference between using underscores or spaces (e.g., "red_hair" or "red hair").
+
+### Why Danbooru Tags Work
+
+- **Tag popularity matters**: The more images associated with a tag on Danbooru, the better the AI can understand and generate it
+- **Rule of thumb**: Tags with at least 1,000 images usually work, and tags with 3,000+ images have a very high success rate
+- **Character names**: Use the exact Danbooru spelling of character names (e.g., "yor briar" works, but "yor forger" may not)
+
+## Effective Prompting Principles
+
+### 1. Be a Precise Minimalist
+
+Unlike older AI generators (circa 2022), modern models don't need filler words or excessive descriptions. Too many tags create noise and reduce quality. Include only what you absolutely want to see in the final image.
+
+### 2. Prompt What You See, Not What You Know
+
+Focus on visual elements that will appear in the image. Avoid including backstory, character traits, or other information that isn't visually represented.
+
+## Structuring Your Prompts
+
+A well-organized prompt helps you maintain control over your generations. Consider structuring your prompts with these categories:
+
+### 1. Composition
+- Style (photorealistic, anime, etc.)
+- Point of view (from_below, from_above, etc.) 
+- Lighting (sidelighting, backlighting, etc.)
+
+### 2. Subjects
+- Main subject(s) (1girl, 1boy, etc.)
+- Character traits (hair color, body type, etc.)
+
+### 3. Actions
+- What the subject is doing
+- Interactions between subjects
+
+### 4. Body Details
+- Posture and positioning
+- Physical features
+- Facial expressions
+- Clothing
+
+### 5. Background
+- Environment (indoor, outdoor, etc.)
+- Weather conditions
+- Props and objects
+
+You don't need to include all categories - focus on what matters most for your desired image.
+
+## Prompt Length and Organization
+
+Breaking your prompt into logical sections using line breaks can help you organize your thoughts (line breaks don't affect generation). For example:
 
 ```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+sidelighting, light particles,
+
+1girl, ginger, solo, smirk,
+
+sweat, freckles, small breasts,
+ginger hair, long hair, straight hair,
+blue eyes, glowing eyes, glasses, looking at viewer,
+
+smile, smirk, grin,
+white tank top,
+
+indoor, library,
+sunset, sunny,
+desk, chair
 ```
 
-### Code Block
+## Common Useful Tags
 
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+### Quality Tags
+- absurdres, best quality, masterpiece
+- detailed, detailed body, detailed face
 
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
+### Actions & Effects
+- motion lines, emphasis lines, speed lines
+- afterimage, motion blur
+- sweat, sweating, sweatdrop
+- wet, blush, breath
 
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-````
+### Lighting
+- backlighting, dim light, rim light
+- dusk, sunset, dawn, sunrise
+- light particles, light rays, sunlight
+
+### Composition
+- from_below, from_above
+- close-up, wide shot
+- looking at viewer
+
+## Negative Prompts
+
+Negative prompts tell the AI what you don't want to see. Common negative tags include:
+- worst quality, low quality, lowres
+- text, logo, watermark, digit
+- multiple views, monochrome
+- bad proportions, anatomical nonsense, bad hands, bad face
+
+## Start Simple, Then Refine
+
+Begin with a simple prompt focusing on the key elements you want, then refine based on results. Experiment with different tags and structures to find what works best for your desired images.
+
+Remember: Effective prompting is learned through practice and experimentation!

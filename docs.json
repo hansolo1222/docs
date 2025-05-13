@@ -28,9 +28,15 @@
                 "group": "Models",
                 "pages": [
                   "prompting/models/intro-to-models",
+                  "prompting/models/t-ponynai3",
                   "prompting/models/duchaiten",
-                  "prompting/models/hassaku-illustrious"
-
+                  "prompting/models/duchaiten-real",
+                  "prompting/models/hassaku-xl-illustrious",
+                  "prompting/models/wai-nsfw-illustrious",
+                  "prompting/models/ntr-mix",
+                  "prompting/models/noobai-xl",
+                  "prompting/models/plant-milk",
+                  "prompting/models/amanatsu"
                 ]
               },
                {
@@ -94,8 +100,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@betterwaifu.com"
+        "label": "Support (Discord Ticket)",
+        "href": "https://discord.gg/kW2UWa4zNq"
       }
     ],
     "primary": {
